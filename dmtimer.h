@@ -22,12 +22,14 @@
 	#define 	TCLR  		0x038
 	#define 	TLDR  		0x040
 	#define 	TCRR  		0x03C
-
+	#define 	TWER  		0x034
 	#define 	TTGR 		0x044
 
+	#define INTC_MIR_CLEAR1 0x482000C8 //0x48200000 + Offset C8
+	#define INTC_SIR_IRQ 0x48200040
 
-	#define 	CM_PER 		0x44E00000
-	#define 	CM_WKUP 	0x44E00400
+	#define CM_PER 		0x44E00000
+	#define CM_WKUP 	0x44E00400
 
 	#define TIMER_INITIAL_COUNT             (0xFF000000u)
 	#define TIMER_RLD_COUNT                 (0xFFE00000u)
