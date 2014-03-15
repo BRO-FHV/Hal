@@ -19,7 +19,7 @@
 /**
  * Enable UART0 Module
  */
-extern void Uart0ModuleClkConfig(void);
+void Uart0ModuleClkConfig(void);
 /**
  * Select UART Pin Mux
  */
