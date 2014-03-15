@@ -11,7 +11,7 @@
 #define BEAGLEBONE_H_
 
 /**
- * Interrupt registers
+ * Interrupt
  */
 #define SOC_AINTC_REGS		(0x48200000)
 #define INTC_MIR_CLEAR(n) 	(0x88 + ((n) * 0x20))
@@ -19,10 +19,10 @@
 /**
  * Enable UART0 Module
  */
-extern void UART0ModuleClkConfig(void);
+extern void Uart0ModuleClkConfig(void);
 /**
  * Select UART Pin Mux
  */
-void UARTPinMuxSetup(unsigned int instanceNum);
+void UartPinMuxSetup(unsigned int instanceNum);
 
 #endif /* BEAGLEBONE_H_ */
