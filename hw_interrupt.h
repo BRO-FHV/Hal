@@ -32,6 +32,8 @@
 #define INTC_PENDING_FIQ(n) (0x9c + ((n) * 0x20))
 #define INTC_ILR(n)  (0x100 + ((n) * 0x04))
 
+#define INTC_CONTROL_NEWIRQAGR    (0x00000001)
+
 // field definitions
 // REVISION
 #define INTC_REVISION_REV    (0x000000FFu)
