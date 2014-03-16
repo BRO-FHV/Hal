@@ -155,6 +155,11 @@ extern "C" {
 /** @brief Base address of control module memory mapped registers             */
 #define SOC_CONTROL_REGS                     (0x44E10000)
 
+/** @brief Base addresses of GPIO memory mapped registers                     */
+#define SOC_GPIO_0_REGS                      (0x44E07000)
+#define SOC_GPIO_1_REGS                      (0x4804C000)
+#define SOC_GPIO_2_REGS                      (0x481AC000)
+#define SOC_GPIO_3_REGS                      (0x481AE000)
 
 /** @brief Base address of Channel controller  memory mapped registers        */
 #define SOC_EDMA30CC_0_REGS                  (0x49000000)
