@@ -25,8 +25,10 @@
 	#define 	TWER  		0x034
 	#define 	TTGR 		0x044
 
+	#define 	IRQ_EOI		0x20
+
 	#define INTC_MIR_CLEAR1 0x482000C8 //0x48200000 + Offset C8
-	#define INTC_SIR_IRQ 0x48200040
+	//#define INTC_SIR_IRQ 0x48200040
 
 	#define CM_PER 		0x44E00000
 	#define CM_WKUP 	0x44E00400
