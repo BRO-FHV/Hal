@@ -24,8 +24,8 @@
 	#define 	TIMER1_TIDR  			0x000 //Identification Register
 	#define 	TIMER1_TIOCP_CFG		0x010 //Timer OCP Configuration Register
 	#define 	TIMER1_TISTAT			0x014 //This register provides status information about the module, excluding the interrupt status information
-	#define 	TIMER1_TISR				0x018 //The Timer Status Register is used to determine which of the timer events requested an interrupt. (T0, T2-T7: IRQENABLE_SET)
-	#define 	TIMER1_TIER				0x01C //Timer Interrupt Enable Set Register
+	#define 	TIMER1_TISR				0x018 //The Timer Status Register is used to determine which of the timer events requested an interrupt. (T0, T2-T7: IRQSTATUS)
+	#define 	TIMER1_TIER				0x01C //Timer Interrupt Enable Set Register (T0, T2-T7: IRQENABLE_SET)
 	#define 	TIMER1_TWER				0x020 //Timer IRQ Wakeup Enable Register (T0, T2-T7: IRQWAKEEN)
 	#define 	TIMER1_TCLR  			0x024 //Timer Control Register
 	#define 	TIMER1_TCRR  			0x028 //Timer Counter Register
@@ -64,30 +64,16 @@
 	#define 	TIMER_TSICR  		0x054 //Timer Synchronous Interface Control Register
 	#define 	TIMER_TCAR2  		0x058 //Timer Capture 2 Register
 
+	#define TCLR_ST   0x001u //Bit 0
+	#define TCLR_AR   0x002u //Bit 1
+	#define TCLR_CE   0x040u //Bit 6
 
+	#define IRQENABLE_TCAR_EN_FLAG 	0x04u //Bit 2, IRQ enable for Capture
+	#define IRQENABLE_OVF_EN_FLAG	0x02u //Bit 1, IRQ enable for Overflow
+	#define IRQENABLE_MAT_EN_FLAG	0x01u //Bit 0, IRQ enable for Match
 
+	#define IRQWAKEEN_TCAR_WUP_ENA 	0x04u //Bit 2, Wakeup generation for Capture
+	#define IRQWAKEEN_OVF_WUP_ENA	0x02u //Bit 1, Wakeup generation for Overflow
+	#define IRQWAKEEN_MAT_WUP_ENA	0x01u //Bit 0, Wakeup generation for Match
 
-
-
-
-
-
-	#define CM_PER 		0x44E00000
-	#define CM_WKUP 	0x44E00400
-
-	#define TIMER_INITIAL_COUNT             (0xFF000000u)
-	#define TIMER_RLD_COUNT                 (0xFFE00000u)
-
-	#define DMTIMER_TCLR_AR   (0x00000002u)
-
-	#define DMTIMER_TCLR_CE   (0x00000040u)
-
-	/* Value used to enable the timer in one-shot and compare mode */
-	#define DMTIMER_ONESHOT_CMP_ENABLE          (DMTIMER_TCLR_CE)
-	/* Value used to enable the timer only in one-shot mode */
-	#define DMTIMER_ONESHOT_NOCMP_ENABLE        (0x0000000)
-	/* Value used to enable the timer in auto-reload and compare mode */
-	#define DMTIMER_AUTORLD_CMP_ENABLE          (DMTIMER_TCLR_AR | DMTIMER_TCLR_CE)
-	/* Value used to enable the timer only in auto-reload mode */
-	#define DMTIMER_AUTORLD_NOCMP_ENABLE        (DMTIMER_TCLR_AR)
 #endif

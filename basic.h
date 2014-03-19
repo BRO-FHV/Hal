@@ -17,5 +17,7 @@
 
 #define reg32r(b, r) (*(volatile uint32_t *)((b)+(r)))
 #define reg32w(b, r, v) (*((volatile uint32_t *)((b)+(r))) = (v))
+#define reg32wor(b, r, v) (*((volatile uint32_t *)((b)+(r))) |= (v))
+#define reg32wxor(b, r, v) (*((volatile uint32_t *)((b)+(r))) ^= (v))
 
 #endif /* BASIC_H_ */
