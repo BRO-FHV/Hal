@@ -29,6 +29,13 @@
 
 #define reg32r(b, r) (*(volatile uint32_t *)((b)+(r)))
 #define reg32w(b, r, v) (*((volatile uint32_t *)((b)+(r))) = (v))
+<<<<<<< HEAD
 >>>>>>> origin/feature/gpio
+=======
+#define reg32m(b, r, v) (*((volatile uint32_t *)((b)+(r))) |= (v))
+#define reg32a(b, r, v) (*((volatile uint32_t *)((b)+(r))) &= (v))
+#define reg32an(b, r, v) (*((volatile uint32_t *)((b)+(r))) &= ~(v))
+
+>>>>>>> origin/feature/gpioLed
 
 #endif /* BASIC_H_ */
