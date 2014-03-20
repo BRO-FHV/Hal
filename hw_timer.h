@@ -76,4 +76,11 @@
 	#define IRQWAKEEN_OVF_WUP_ENA	0x02u //Bit 1, Wakeup generation for Overflow
 	#define IRQWAKEEN_MAT_WUP_ENA	0x01u //Bit 0, Wakeup generation for Match
 
+	#define TSICR_POSTED	0x00000004u
+
+	#define TWPS_W_PEND_TCLR   (0x00000001u)
+	#define TWPS_W_PEND_TCRR   (0x00000002u)
+	#define TWPS_W_PEND_TLDR   (0x00000004u)
+	#define TWPS_W_PEND_TTGR   (0x00000008u)
+	#define TWPS_W_PEND_TMAR   (0x00000010u)
 #endif
