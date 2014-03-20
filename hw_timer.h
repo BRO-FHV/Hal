@@ -83,4 +83,9 @@
 	#define TWPS_W_PEND_TLDR   (0x00000004u)
 	#define TWPS_W_PEND_TTGR   (0x00000008u)
 	#define TWPS_W_PEND_TMAR   (0x00000010u)
+
+	#define TISR_TCAR_IT_FLAG		0x04u //Bit 2, IRQ status for Capture
+	#define TISR_OVF_IT_FLAG		0x02u //Bit 1, IRQ status for Overflow
+	#define TISR_MAT_IT_FLAG		0x01u //Bit 0, IRQ status for Match
+	#define TISR_ALL_FLAGS			0x07u //Bit 0, 1 and 2
 #endif
