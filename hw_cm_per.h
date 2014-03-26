@@ -1426,8 +1426,6 @@
 
 #define PRCM_BASE_ADDR                    (0x44E00000)
 
-#define	SOC_CM_PER_REGS					  (PRCM_BASE_ADDR + 0x0)
-#define	SOC_CM_WKUP_REGS				  (PRCM_BASE_ADDR + 0x400)
 #define CONTROL_CONF_GPMC_A(n)   		  (0x840 + (n * 4))
 #define CONTROL_CONF_MUXMODE(n)        	  (n)
 
