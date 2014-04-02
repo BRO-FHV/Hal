@@ -19,10 +19,10 @@
 /**
  * Enable UART0 Module
  */
-void Uart0ModuleClkConfig(void);
+extern void Uart0ModuleClkConfig(void);
 /**
  * Select UART Pin Mux
  */
-void UartPinMuxSetup(unsigned int instanceNum);
+extern void UartPinMuxSetup(unsigned int instanceNum);
 
 #endif /* BEAGLEBONE_H_ */
