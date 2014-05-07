@@ -77,4 +77,10 @@
 	#define TISR_OVF_IT_FLAG		0x02u //Bit 1, IRQ status for Overflow
 	#define TISR_MAT_IT_FLAG		0x01u //Bit 0, IRQ status for Match
 	#define TISR_ALL_FLAGS			0x07u //Bit 0, 1 and 2
+
+
+	/* Value used to enable the timer only in one-shot mode */
+	#define DMTIMER_ONESHOT_NOCMP_ENABLE        (0x0000000)
+
+
 #endif
