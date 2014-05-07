@@ -53,6 +53,8 @@
 	#define 	TIMER_TSICR  		0x054 //Timer Synchronous Interface Control Register
 	#define 	TIMER_TCAR2  		0x058 //Timer Capture 2 Register
 
+	#define TCLR_ONESHOT_NOCMP_ENABLE        (0x0000000)
+
 	#define TCLR_ST   0x001u //Bit 0
 	#define TCLR_AR   0x002u //Bit 1
 	#define TCLR_CE   0x040u //Bit 6
