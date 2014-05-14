@@ -29,8 +29,8 @@ void HalMemInit(void)
     memories[1].userSize = 0x10000000;
 
     // interrupt vectors
-    intvecs_start = 0x4020FFC0;
-    intvecs_size = 0x0000003B;
+    intvecs_start = 0x4030CE04;
+    intvecs_size = 0x00000018;
 
     // memory mapped IOs
     device_memory_count = 9;
