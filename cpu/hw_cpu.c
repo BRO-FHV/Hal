@@ -6,6 +6,7 @@
  * Description: 
  * TODO
  */
+#include "hw_cpu.h"
 
 void CPUirqd(void)
 {
